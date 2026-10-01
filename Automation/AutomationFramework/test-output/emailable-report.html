@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">AutomationSuite</th></tr>
+<tr><td><a href="#t0">AllTests</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">11,069</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AutomationSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AllTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.AllTests</td><td><a href="#m0">completeOrderTest</a></td><td rowspan="1">1782570036362</td><td rowspan="1">160</td></tr><tr class="failedeven"><td><a href="#m1">logoutTest</a></td><td rowspan="1">1782570036541</td><td rowspan="1">50</td></tr><tr><th colspan="4">AllTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">tests.AllTests</td><td><a href="#m2">addBackpackTest</a></td><td rowspan="1">1782570035045</td><td rowspan="1">152</td></tr><tr class="passedeven"><td><a href="#m3">addBikeLightTest</a></td><td rowspan="1">1782570035197</td><td rowspan="1">161</td></tr><tr class="passedeven"><td><a href="#m4">checkoutNavigationTest</a></td><td rowspan="1">1782570035556</td><td rowspan="1">155</td></tr><tr class="passedeven"><td><a href="#m5">emptyLoginTest</a></td><td rowspan="1">1782570033068</td><td rowspan="1">603</td></tr><tr class="passedeven"><td><a href="#m6">enterCheckoutDetailsTest</a></td><td rowspan="1">1782570035721</td><td rowspan="1">637</td></tr><tr class="passedeven"><td><a href="#m7">invalidLoginTest</a></td><td rowspan="1">1782570030027</td><td rowspan="1">923</td></tr><tr class="passedeven"><td><a href="#m8">invalidPasswordTest</a></td><td rowspan="1">1782570031862</td><td rowspan="1">1201</td></tr><tr class="passedeven"><td><a href="#m9">invalidUsernameTest</a></td><td rowspan="1">1782570030967</td><td rowspan="1">892</td></tr><tr class="passedeven"><td><a href="#m10">inventoryVisibleTest</a></td><td rowspan="1">1782570035023</td><td rowspan="1">22</td></tr><tr class="passedeven"><td><a href="#m11">lockedUserTest</a></td><td rowspan="1">1782570033671</td><td rowspan="1">672</td></tr><tr class="passedeven"><td><a href="#m12">openCartTest</a></td><td rowspan="1">1782570035362</td><td rowspan="1">169</td></tr><tr class="passedeven"><td><a href="#m13">validLoginTest</a></td><td rowspan="1">1782570034349</td><td rowspan="1">671</td></tr><tr class="passedeven"><td><a href="#m14">verifyBackpackInCartTest</a></td><td rowspan="1">1782570035531</td><td rowspan="1">17</td></tr></tbody>
+</table>
+<h2>AllTests</h2><h3 id="m0">tests.AllTests#completeOrderTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.AllTests.completeOrderTest(AllTests.java:199)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.AllTests#logoutTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#back\-to\-products&quot;}
+  (Session info: chrome=149.0.7827.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2412c0f6a0392ca311d820f130c972a0, findElement {value=back-to-products, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.54, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\volsr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54442}, goog:processID: 7256, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54442/devtoo..., se:cdpVersion: 149.0.7827.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2412c0f6a0392ca311d820f130c972a0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at tests.AllTests.logoutTest(AllTests.java:207)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.AllTests#addBackpackTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.AllTests#addBikeLightTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.AllTests#checkoutNavigationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.AllTests#emptyLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.AllTests#enterCheckoutDetailsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.AllTests#invalidLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.AllTests#invalidPasswordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.AllTests#invalidUsernameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.AllTests#inventoryVisibleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.AllTests#lockedUserTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.AllTests#openCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.AllTests#validLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">tests.AllTests#verifyBackpackInCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
